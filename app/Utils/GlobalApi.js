@@ -1,6 +1,7 @@
 import axios from "axios";
 
-
+const BASE_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json";
+const API_KEY = "AIzaSyAF6modZ-9xq9rRz_3v-JFpHcAafvFJXqw";
 
 const NewNearByPlaces = async (data) => {
     const { location, radius, type } = data; // Destructure the necessary parameters
